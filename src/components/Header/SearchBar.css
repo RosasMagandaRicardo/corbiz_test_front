@@ -1,0 +1,25 @@
+.searchBarContainer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 2rem
+}
+
+.textImageContainer {
+    display: flex;
+    padding: 0 0 0.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    border-bottom: 1px solid black;
+}
+
+.textImageContainer img {
+    width: 18px;
+}
+
+.searchBarText {
+    font-size: 13px;
+    color: #7A7A7A;
+}

@@ -1,0 +1,7 @@
+.containerNavBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 0 auto;
+}

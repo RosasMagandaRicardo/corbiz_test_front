@@ -1,0 +1,25 @@
+.cartShoppingContainer {
+    display: flex;
+    align-items: center;
+}
+
+.cartShoppingContainer img {
+    width: 18px;
+}
+
+.countContainer {
+    margin-left: 0.2rem;
+    background: #F8475F;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countNumber {
+    font-size: 10px;
+    color: white;
+    font-weight: 600;
+}
