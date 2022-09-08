@@ -1,0 +1,14 @@
+.partnersInfoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.partnerContainer {
+    width: fit-content;
+    padding: 0 0.5rem;
+}
+
+.partnerContainer p {
+    font-size: 11px;
+    margin: 0.2rem 0;
+}

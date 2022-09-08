@@ -8,14 +8,14 @@ import './HeaderCustom.css'
 
 const HeaderCustom = () => {
   return (
-    <section className={`containerNavBar`}>
+    <header className={`containerNavBar`}>
       <div className="logoContainer">
         <img src={ReactLogo} alt="Logo Corebiz" />
       </div>
       <SearchBar></SearchBar>
       <MyAccount></MyAccount>
       <ShoppingCart></ShoppingCart>
-    </section>
+    </header>
   );
 };
 

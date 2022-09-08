@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, {useState, useEffect } from "react";
 import HeaderCustom from "./components/Header/HeaderCustom";
 import FooterCustom from "./components/Footer/FooterCustom"
 
@@ -23,9 +23,9 @@ const App = () => {
   peticion();
 
   return (
-    <div  className={"storeContainer"} style={{ textAlign: "center" }}>
-      <HeaderCustom/>
-      <FooterCustom/>
+    <div className={"storeContainer"} style={{ textAlign: "center" }}>
+        <HeaderCustom/>
+        <FooterCustom/>
     </div>
   );
 };

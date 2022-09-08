@@ -1,0 +1,30 @@
+.footerContainer {
+    background: #000;
+}
+
+.columnContainer {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.columnFooterContainer {
+    width: 100%;
+    color: #fff;
+}
+
+.columnFooterContainerLeft {
+    display: flex;
+}
+
+.columnFooterContainerCenter {
+    justify-content: center;
+    display: flex;
+}
+
+.columnFooterContainerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
