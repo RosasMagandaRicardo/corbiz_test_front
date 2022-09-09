@@ -1,0 +1,43 @@
+.newsletterContainer {
+    background: #F2F2F2;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletterTitle {
+    color: #333333;
+    font-size: 22px;
+    margin: 0.5rem;
+}
+
+.inputNombre,
+.inputEmail {
+    width: 280px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #585858;
+    font-family: 'Nunito';
+    margin: 0 0.3rem;
+    border: none;
+}
+
+.buttonSubmitForm {
+    font-size: 14px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    height: 38px;
+    font-family: 'Nunito';
+    width: 140px;
+    transition: all 500ms ease;
+}
+
+.buttonSubmitForm:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: all 500ms ease;
+}

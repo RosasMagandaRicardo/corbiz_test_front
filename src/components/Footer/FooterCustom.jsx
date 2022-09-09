@@ -3,6 +3,7 @@ import CompanyInfo from "./CompanyInfo";
 import Contact from "./Contact"
 import Partners from "./Partners"
 import './footerCustom.css';
+import Newsletter from "./Newsletter/Newsletter"
 
 import corebizImg from "../../assets/site-logo-corebiz-preto-cinza.svg"
 import vtexlogo from "../../assets/vector.svg"
@@ -48,6 +49,7 @@ const FooterCustom = () => {
 
   return (
     <footer className="footerContainer">
+      <Newsletter/>
       <div className="columnContainer">
         <div className="columnFooterContainer columnFooterContainerLeft">
           <CompanyInfo info={companyInfo} />
