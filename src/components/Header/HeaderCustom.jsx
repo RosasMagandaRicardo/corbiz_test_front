@@ -10,7 +10,7 @@ const HeaderCustom = () => {
   return (
     <header className={`containerNavBar`}>
       <div className="logoContainer">
-        <img src={ReactLogo} alt="Logo Corebiz" />
+        <a href="/"><img src={ReactLogo} alt="Logo Corebiz" /></a>
       </div>
       <SearchBar></SearchBar>
       <MyAccount></MyAccount>

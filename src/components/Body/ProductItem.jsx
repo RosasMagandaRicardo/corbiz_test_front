@@ -29,6 +29,14 @@ const ProductItem = ({ data }) => {
 
   const [enter, setEnter] = useState(false);
 
+  localStorage.setItem('carrito', "0");
+
+  const sumarACarrito = () => {
+    let total = parseInt(localStorage.getItem('carrito'))+1;
+    localStorage.setItem('carrito',total)
+    return total
+  }
+
   return (
     <div
       key={productId}
@@ -75,11 +83,11 @@ const ProductItem = ({ data }) => {
         <div className="installments">
           <p className="textInstallments">
             <span></span>
-            {installments ? `ou em ${quantity} de R $ ${value}` : ""}
+            {installments ? `ou em ${quantity}x de R $ ${value}` : ""}
           </p>
         </div>
         <div className="buyButtonContainer">
-        <a href="/"><button style={{ opacity: `${enter ? 1 : 0}` }}>COMPRAR</button></a>
+            <button style={{ opacity: `${enter ? 1 : 0}` }} onClick={() => sumarACarrito()}>COMPRAR</button>
         </div>
       </div>
     </div>

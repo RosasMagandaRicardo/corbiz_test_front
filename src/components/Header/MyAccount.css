@@ -12,3 +12,8 @@
     font-size: 13px;
     color: #7A7A7A;
 }
+
+.linkAccount {
+    text-decoration: none;
+    display: flex;
+}

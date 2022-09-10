@@ -1,17 +1,21 @@
-import React from 'react'
-import CartShoppingImg from "../../assets/cart-shopping.svg"
+import React, { useEffect } from "react";
+import CartShoppingImg from "../../assets/cart-shopping.svg";
 
-import './ShoppingCart.css'
+import "./ShoppingCart.css";
 
 const ShoppingCart = () => {
-    return (
-      <div className="cartShoppingContainer">
-        <img src={CartShoppingImg} alt="MiniCart"/>
-        <div className="countContainer">
-            <span className="countNumber">1</span>
-        </div>
-      </div>
-    )
-}
+  useEffect(() => {
+    localStorage.getItem("carrito");
+  }, []);
 
-export default ShoppingCart
+  return (
+    <div className="cartShoppingContainer">
+      <img src={CartShoppingImg} alt="MiniCart" />
+      <div className="countContainer">
+        <span className="countNumber">{localStorage.getItem("carrito")}</span>
+      </div>
+    </div>
+  );
+};
+
+export default ShoppingCart;

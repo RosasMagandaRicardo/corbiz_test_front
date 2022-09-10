@@ -13,7 +13,8 @@ const Slider = ({slides}) => {
         height:"100%",
         backgroundImage:`url(${slides[currentSlider].imgSrc})`,
         backgroundPosition: "center",
-        backgroundSize : "cover"
+        backgroundSize : "cover",
+        transform : "backgroundImage 300ms ease"
     }
 
     const dotsStyles = {
