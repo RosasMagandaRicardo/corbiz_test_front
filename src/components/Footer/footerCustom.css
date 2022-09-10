@@ -4,7 +4,8 @@
 
 .columnContainer {
     display: flex;
-    max-width: 90%;
+    max-width: 1200px;
+    /* max-width: 90%; */
     margin: 0 auto;
     padding: 1rem;
 }

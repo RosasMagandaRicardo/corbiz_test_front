@@ -4,12 +4,14 @@ import imgSlide2 from '../../assets/slider2.jpg'
 import imgSlide3 from '../../assets/slider3.jpg'
 import imgSlide4 from '../../assets/slider4.jpg'
 import Slider from './Slider'
-import ProductCarrousel from './ProductCarrousel.jsx'
+
+import ProductDisplayPage from "./ProductDisplayPage";
 
 import './bodyCustom.css'
 
-const BodyCustom = () => {
-    const slides = [
+const BodyCustom = () => {  
+
+  const slides = [
         {imgSrc:imgSlide1},
         {imgSrc:imgSlide2},
         {imgSrc:imgSlide3},
@@ -18,12 +20,12 @@ const BodyCustom = () => {
 
     return (
     <>
-      <section className="bodyContainer">
+      <section className="sliderContainer">
         <Slider slides={slides}/>
       </section>
-      <>
-        <ProductCarrousel/>
-      </>
+      <section className="shelfContainer">
+        <ProductDisplayPage/>        
+      </section>
     </>
     )
 }

@@ -1,5 +1,4 @@
 import { TYPES } from "../actions/shoppingAction";
-/* import MiniCart from "../components/MiniCart"; */
 
 //URL DE LA API
 const API_DIRECTION = "https://corebiz-test.herokuapp.com/api/v1/products";

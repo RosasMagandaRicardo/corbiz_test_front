@@ -1,0 +1,6 @@
+.itemsShelf {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 0 auto;
+}
