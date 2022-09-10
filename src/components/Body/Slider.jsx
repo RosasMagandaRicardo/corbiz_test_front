@@ -21,7 +21,7 @@ const Slider = ({slides}) => {
         justifyContent : "center",
         position : "absolute",
         bottom : "1rem",
-        left : "50%"
+        width : "100%"
     }
 
     const dotStyles = {

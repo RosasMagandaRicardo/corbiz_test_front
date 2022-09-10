@@ -4,6 +4,7 @@ import imgSlide2 from '../../assets/slider2.jpg'
 import imgSlide3 from '../../assets/slider3.jpg'
 import imgSlide4 from '../../assets/slider4.jpg'
 import Slider from './Slider'
+import ProductCarrousel from './ProductCarrousel.jsx'
 
 import './bodyCustom.css'
 
@@ -16,9 +17,14 @@ const BodyCustom = () => {
     ]
 
     return (
+    <>
       <section className="bodyContainer">
         <Slider slides={slides}/>
       </section>
+      <>
+        <ProductCarrousel/>
+      </>
+    </>
     )
 }
 
