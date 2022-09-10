@@ -1,6 +1,7 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import HeaderCustom from "./components/Header/HeaderCustom";
-import FooterCustom from "./components/Footer/FooterCustom"
+import FooterCustom from "./components/Footer/FooterCustom";
+import BodyCustom from "./components/Body/BodyCustom";
 
 import "./App.css";
 
@@ -11,21 +12,30 @@ const App = () => {
 
   // call server to see if its running
 
-    const peticion = async() => {
-      const response = await fetch(`${API_DIRECTION}`);
-      const dat = await response.json();
-      /* renderTheData(dat); */
-      /*fetch(`${API_DIRECTION}`)
-          .then((response) => response.json())
-          .then((data) => renderTheData(data));*/
-          console.log("Response",dat)
-    }
+  const peticion = async () => {
+    const response = await fetch(`${API_DIRECTION}`);
+    const dat = await response.json();
+    /* renderTheData(dat); */
+    /*fetch(`${API_DIRECTION}`)
+            .then((response) => response.json())
+            .then((data) => renderTheData(data));*/
+    console.log("Response", dat);
+  };
   peticion();
 
+  const mainContainerStyles = {
+    textAlign : "center",
+    height : "100vh",
+    display : "flex",
+    flexDirection : "column",
+    justifyContent : "space-between"
+  }
+
   return (
-    <div className={"storeContainer"} style={{ textAlign: "center" }}>
-        <HeaderCustom/>
-        <FooterCustom/>
+    <div className={"storeContainer"} style={mainContainerStyles}>
+      <HeaderCustom />
+      <BodyCustom />
+      <FooterCustom />
     </div>
   );
 };
