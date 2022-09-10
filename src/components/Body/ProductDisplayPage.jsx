@@ -19,7 +19,7 @@ const ProductDisplayPage = ({ state }) => {
   return (
     <>
         <h2 style={{margin:0}}>Más Vendidos</h2>
-        <div style={{width:"8%",background:"#C0C0C0",height:"4px",margin:"0rem"}}></div>
+        <div style={{width:"8%",background:"#C0C0C0",height:"4px",margin:"0.2rem 0 1rem"}}></div>
         <div className="itemsShelf">
             {productos.map((product) => (
             <ProductItem key={product.productId} data={product}/>
