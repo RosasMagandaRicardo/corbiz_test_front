@@ -6,16 +6,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* cursor: pointer; */
+    transition: all 300ms ease;
 }
 
 .offerFlag {
     right: 0;
     top: 0;
     border: 70px solid transparent;
-    /* border-bottom: 0; */
     border-right: 0;
     border-top: 70px solid #F8475F;
-    /* color: black; */
     position: absolute;
 }
 
@@ -26,4 +26,41 @@
     bottom: 1.2rem;
     color: white;
     font-weight: 700;
+}
+
+.prodcutInformationContainer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textProductName,
+.textListPrice,
+.textInstallments {
+    font-size: 12px;
+    margin: 0;
+    color: #7A7A7A;
+}
+
+.textSellPrice {
+    color: black;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.buyButtonContainer {
+    margin: 0.5rem 0;
+}
+
+.buyButtonContainer button {
+    transition: all 300ms ease;
+    border-radius: 5px;
+    background: #000000;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
 }
