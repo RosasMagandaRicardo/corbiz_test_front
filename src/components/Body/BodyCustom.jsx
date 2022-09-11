@@ -23,9 +23,9 @@ const BodyCustom = () => {
       <section className="sliderContainer">
         <Slider slides={slides}/>
       </section>
-      {/* <section className="shelfContainer">
+      <section className="shelfContainer">
         <ProductDisplayPage/>        
-      </section> */}
+      </section>
     </>
     )
 }

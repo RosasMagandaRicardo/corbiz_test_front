@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Prueba tecnica Front End Corebiz 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Despliegue de aplicacion](./public/fullView.PNG)
 
-## Available Scripts
+- [Instalar y Correr la aplicación](#instalar-y-correr-la-aplicación)
+- [Descripción de la solución](#descripción-de-la-solución)
 
-In the project directory, you can run:
+## Instalar y Correr la aplicación
 
-### `npm start`
+- Las únicas herramientas que utilicé para la prueba fueron el CLI "create-react-app" y "npm" para ejectuar el start del proyecto (el último puede ser añadido con la instalación de [Node](https://nodejs.org/es/download/)).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Instalar create-react-app : `npm install -g create-react-app`
+Instalar npm : `npm install -g create-react-app`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Una vez ubicado en la carpeta `root` de la aplicacion únicamente se corre el comando: `npm start`. El comando ejecutará la aplicación en el modo de desarrollo y solo tiene que abrir [http://localhost:3000](http://localhost:3000) para ver el entorno en su navegador.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Descripción de la solución
 
-### `npm run build`
+- El consumo de la api para los productos se lleva a cabo dentro del componente `<ProductDisplayPage/>` que representa el Shelf de los artículos. Cada producto capturado por la petición es almacenado en un array de productos con la ayuda de un state para poder iterarlo con un map, el cual mandará la data a un componente (`<ProductItem/>`) para representar cada uno de los productSummary.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Hover Summary](./public/summary.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Para el registro al Newsletter hice uso del elemento `<form>` dentro del componente `<Newsletter/>`, por lo que las validaciones dentro de los inputs están dadas por :
+    - Es necesario colocar información en ambos inputs para realizar el submit.
+    - El input para email es de tipo email, por lo que es necesario incluir un "@" dentro del campo.
+    - Al momento de hacer click en el botón de "Suscribirme" se realiza el POST mostrando en consola y mediante un "alert" la respuesta obtenida si no se presenta un error, o solo un mensaje dentro de consola de lo contrario.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Succesfull Register](./public/register.PNG)
 
-### `npm run eject`
+ - El slider de productos simular una transición entre una serie de banners.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ ![Slider Transition](./public/slider.gif)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ Saludos cordiales!
+ Elaboró: Rosas Maganda Ricardo
