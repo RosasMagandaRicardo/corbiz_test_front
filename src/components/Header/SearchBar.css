@@ -26,6 +26,7 @@
 
 @media(max-width:820px) {
     .searchBarContainer {
-        display: none;
+        width: auto;
+        margin: 1rem 2rem 0;
     }
 }

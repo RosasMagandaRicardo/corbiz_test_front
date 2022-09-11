@@ -1,3 +1,7 @@
+.menuLogoContainer {
+    display: flex;
+}
+
 .containerNavBar {
     display: flex;
     width: 100%;
@@ -19,6 +23,13 @@
 }
 
 @media(max-width:800px) {
+    .containerNavBar {
+        flex-direction: column;
+    }
+    .headermenuCart {
+        display: flex;
+        justify-content: space-around;
+    }
     .mobileMenuContainer img {
         display: block !important;
     }

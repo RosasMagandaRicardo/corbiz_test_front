@@ -1,4 +1,4 @@
-# Prueba tecnica Front End Corebiz 2022
+# Prueba técnica Front End Corebiz 2022
 
 ![Despliegue de aplicacion](./public/fullView.PNG)
 

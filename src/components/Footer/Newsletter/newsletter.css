@@ -41,3 +41,28 @@
     color: black;
     transition: all 500ms ease;
 }
+
+@media(max-width:820px) {
+    .newsletterContainer {
+        height: auto;
+        padding: 1rem 0;
+    }
+    .newsletterTitle {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .footerContainer {
+        margin-top: 1rem;
+    }
+    .buttonSubmitForm {
+        width: 85%;
+        padding: 1rem;
+        height: auto;
+    }
+    .inputNombre,
+    .inputEmail {
+        width: 80%;
+        margin: 1rem 0;
+    }
+}
