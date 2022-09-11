@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import starFull from "../../assets/star-solid.svg";
 import starVoid from "../../assets/star-regular.svg";
+import { isMobile } from "react-device-detect";
 
 import "./productItem.css";
 
@@ -93,7 +94,7 @@ const ProductItem = ({ data }) => {
           </p>
         </div>
         <div className="buyButtonContainer">
-            <button style={{ opacity: `${enter ? 1 : 0}` }} onClick={sumarACarrito}>COMPRAR</button>
+            <button style={{ opacity: `${enter || isMobile ? 1 : 0}` }} onClick={sumarACarrito}>COMPRAR</button>
         </div>
       </div>
     </div>

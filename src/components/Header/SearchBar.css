@@ -15,6 +15,34 @@
     border-bottom: 1px solid black;
 }
 
+.searchBarContainer input {
+    display: flex;
+    padding: 0.3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.searchBarContainer input:focus-visible {
+    outline: none !important;
+}
+
+.searchBarContainer button {
+    background: none;
+    border: none;
+    padding: 0.05rem;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.searchBarContainer button img {
+    width: 20px
+}
+
 .textImageContainer img {
     width: 18px;
 }
