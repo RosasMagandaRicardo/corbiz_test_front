@@ -7,3 +7,19 @@
     margin: 0 auto;
     padding: 1rem 0;
 }
+
+.mobileMenuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenuContainer img {
+    display: none !important;
+}
+
+@media(max-width:800px) {
+    .mobileMenuContainer img {
+        display: block !important;
+    }
+}

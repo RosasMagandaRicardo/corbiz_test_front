@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import starFull from "../../assets/star-solid.svg";
 import starVoid from "../../assets/star-regular.svg";
 
@@ -15,26 +15,32 @@ const ProductItem = ({ data }) => {
     installments,
   } = data;
 
-  const { quantity, value } = installments;
+  const {quantity,value} = installments;
 
   const fillstars = () => {
     const allStars = [];
     for (let i = 0; i < 5; i++) {
       i < stars
-        ? allStars.push(<img src={starFull}></img>)
-        : allStars.push(<img src={starVoid}></img>);
+        ? allStars.push(<img src={starFull} alt="fillStar"></img>)
+        : allStars.push(<img src={starVoid} alt="emptyStar"></img>);
     }
     return allStars;
   };
 
   const [enter, setEnter] = useState(false);
 
-  localStorage.setItem('carrito', "0");
+  const [countCarrito, setCountCarrito] = useState(window.localStorage.getItem('count'))
 
-  const sumarACarrito = () => {
-    let total = parseInt(localStorage.getItem('carrito'))+1;
-    localStorage.setItem('carrito',total)
-    return total
+  useEffect(() => {
+    setCountCarrito(JSON.parse(window.localStorage.getItem('count')));
+  }, []);
+
+  useEffect(() => {
+        window.localStorage.setItem('count', countCarrito);
+  }, [countCarrito]);
+
+  const sumarACarrito = () =>{
+    return setCountCarrito(countCarrito + 1)
   }
 
   return (
@@ -87,7 +93,7 @@ const ProductItem = ({ data }) => {
           </p>
         </div>
         <div className="buyButtonContainer">
-            <button style={{ opacity: `${enter ? 1 : 0}` }} onClick={() => sumarACarrito()}>COMPRAR</button>
+            <button style={{ opacity: `${enter ? 1 : 0}` }} onClick={sumarACarrito}>COMPRAR</button>
         </div>
       </div>
     </div>

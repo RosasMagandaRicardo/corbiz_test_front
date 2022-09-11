@@ -3,7 +3,7 @@ import Mignifying from "../../assets/magnifying-glass.svg"
 
 import './SearchBar.css'
 
-const SearchBar = (text,image) => {
+const SearchBar = () => {
     return (
       <div className="searchBarContainer">
         <div className="textImageContainer">
